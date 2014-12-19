@@ -1,3 +1,5 @@
+// Et bah voila !
+
 extern"C"{
 #include "MonochromeLib.h"
 #include "fxlib.h"
@@ -16,8 +18,6 @@ void JouerLevel(int Largeur,int Hauteur,char *Carte){
 	int a = 0;
 	int i = 0;
 	int x2 = 0;
-	float Sens = 0=1;		// Sens == 1 ou Sens == 2 alors vers la droite, Sens == 3 ou Sens == 4 alors vers la gauche
-	int SautEnclenche = 0;
 
 	while(1){
 		for(i=(int)x-(Largeur*6)-4;i<=((int)x+Hauteur+12);i++){
@@ -46,10 +46,6 @@ void JouerLevel(int Largeur,int Hauteur,char *Carte){
 
 		}
 
-
-		switch (Sens)
-			case 1: 
-
 		ML_display_vram();
 		ML_clear_vram();
 		a = 0;
@@ -57,7 +53,6 @@ void JouerLevel(int Largeur,int Hauteur,char *Carte){
 		Sleep(30);
 
 		if(IsKeyDown(KEY_CTRL_RIGHT)){
-			GestionSens(1);
 			x2--;
 			if (x2==-8){
 				x++;
@@ -66,25 +61,17 @@ void JouerLevel(int Largeur,int Hauteur,char *Carte){
 		}
 
 		if(IsKeyDown(KEY_CTRL_LEFT)){
-			GestionSens(2);
 			x2++;
 			if (x2==8){
 				x--;
 				x2=0;
 			}
 		}
-
-		if(IsKeyDown(KEY_CTRL_UP) || SautEnclenche == 1){
-			
-		}
+		
 
 	}
 }
 
 void Action(){
-	
-}
-
-void GestionSens(int Direction){
 	
 }

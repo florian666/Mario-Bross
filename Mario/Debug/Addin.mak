@@ -5,8 +5,8 @@
 # Directory defines
 TCDIR = C:\Program Files\CASIO\fx-9860G SDK\OS\SH
 OSDIR = C:\Program Files\CASIO\fx-9860G SDK\OS
-APPDIR = C:\Users\Xavier\Documents\GitHub\Mario-Bross\Mario
-OUTDIR = C:\Users\Xavier\Documents\GitHub\Mario-Bross\Mario\Debug
+APPDIR = C:\Users\Xavier\Desktop\Dévellopement-  Programmation\C\Mario2\Mario
+OUTDIR = C:\Users\Xavier\Desktop\Dévellopement-  Programmation\C\Mario2\Mario\Debug
 
 ################
 # Main Defines
