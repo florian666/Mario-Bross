@@ -1,0 +1,137 @@
+SH SERIES C/C++ Compiler (Ver. 6.0C)                                                                 19-Dec-2014 15:43:13  PAGE    1
+
+************ OBJECT LISTING ************
+
+FILE NAME: C:\Users\Xavier\Desktop\D�vellopement-  Programmation\C\Mario2\Mario\SPRITE.c
+
+SCT OFFSET   CODE       C LABEL     INSTRUCTION OPERAND    COMMENT
+
+        SPRITE.c     1    #include "SPRITE.h"
+        SPRITE.c     2    
+        SPRITE.c     3            const unsigned char tile_01[]={0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,}; // tile carré
+        SPRITE.c     4            const unsigned char tile_02[]={0xff, 0x81, 0xbd, 0xa5, 0x85, 0x81, 0x85, 0xff,};  // tile point d'
+                         +interrogation
+        SPRITE.c     5            const unsigned char tile_03[]={0xff, 0x81, 0x81, 0xc3, 0x42, 0x42, 0x42, 0x42,}; // tile fin tuyea
+                         +u
+        SPRITE.c     6            const unsigned char tile_04[]={0x42, 0x42, 0x42, 0x42, 0x42, 0x42, 0x42, 0x42,}; // tile début tu
+                         +yeau
+        SPRITE.c     7            const unsigned char tile_05[]={0xff, 0xd5, 0xff, 0xab, 0xff, 0xd5, 0xff, 0xff,}; // tile brique ca
+                         +ssable
+        SPRITE.c     8            const unsigned char tile_06[]={0x3c, 0x66, 0xdb, 0x99, 0x99, 0xdb, 0x66, 0x3c,}; // tile grosse pi
+                         +ece
+        SPRITE.c     9            const unsigned char tile_07[]={0x0, 0x0, 0x18, 0x3c, 0x3c, 0x18, 0x0, 0x0,}; // tile piece normale
+C   00000000              _tile_01:                        ; static: tile_01
+    00000000 FFFFFFFFFF             .DATA.B     H'FF,H'FF,H'FF,H'FF,H'FF,H'FF,H'FF,H'FF
+             FFFFFF       
+    00000008              _tile_02:                        ; static: tile_02
+    00000008 FF81BDA585             .DATA.B     H'FF,H'81,H'BD,H'A5,H'85,H'81,H'85,H'FF
+             8185FF       
+    00000010              _tile_03:                        ; static: tile_03
+    00000010 FF8181C342             .DATA.B     H'FF,H'81,H'81,H'C3,H'42,H'42,H'42,H'42
+             424242       
+    00000018              _tile_04:                        ; static: tile_04
+    00000018 4242424242             .DATA.B     H'42,H'42,H'42,H'42,H'42,H'42,H'42,H'42
+             424242       
+    00000020              _tile_05:                        ; static: tile_05
+    00000020 FFD5FFABFF             .DATA.B     H'FF,H'D5,H'FF,H'AB,H'FF,H'D5,H'FF,H'FF
+             D5FFFF       
+    00000028              _tile_06:                        ; static: tile_06
+    00000028 3C66DB9999             .DATA.B     H'3C,H'66,H'DB,H'99,H'99,H'DB,H'66,H'3C
+             DB663C       
+    00000030              _tile_07:                        ; static: tile_07
+    00000030 0000183C3C             .DATA.B     H'00,H'00,H'18,H'3C,H'3C,H'18,H'00,H'00
+             180000       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SH SERIES C/C++ Compiler (Ver. 6.0C)                                                                 19-Dec-2014 15:43:13  PAGE    1
+
+
+******** STATISTICS INFORMATION ********
+
+
+********** ERROR INFORMATION ***********
+
+NUMBER OF ERRORS:           0
+NUMBER OF WARNINGS:         0
+
+
+
+
+******* SOURCE LINE INFORMATION ********
+
+COMPILED SOURCE LINE:        9
+
+
+
+******* SECTION SIZE INFORMATION *******
+
+PROGRAM  SECTION (P):                               00000000 Byte(s)
+CONSTANT SECTION (C):                               00000038 Byte(s)
+DATA     SECTION (D):                               00000000 Byte(s)
+BSS      SECTION (B):                               00000000 Byte(s)
+
+ TOTAL PROGRAM SIZE: 00000038 Byte(s)
+
+
+
+********** LABEL INFORMATION ***********
+
+NUMBER OF EXTERNAL REFERENCE SYMBOLS:            0
+NUMBER OF EXTERNAL DEFINITION SYMBOLS:           7
+NUMBER OF INTERNAL/EXTERNAL SYMBOLS:             7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*** COMMAND PARAMETER ***
+
+
+  -subcommand=C:\Users\Xavier\AppData\Local\Temp\hmk4A53.tmp 
+

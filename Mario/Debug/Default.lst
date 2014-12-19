@@ -1,0 +1,203 @@
+SH SERIES C/C++ Compiler (Ver. 6.0C)                                                                 19-Dec-2014 15:43:12  PAGE    1
+
+************ OBJECT LISTING ************
+
+FILE NAME: C:\Users\Xavier\Desktop\Dévellopement-  Programmation\C\Mario2\Mario\Default.cpp
+
+SCT OFFSET   CODE       C LABEL     INSTRUCTION OPERAND    COMMENT
+
+      Default.cp     1    /*****************************************************************/
+      Default.cp     2    /*                                                               */
+      Default.cp     3    /*   CASIO fx-9860G SDK Library                                  */
+      Default.cp     4    /*                                                               */
+      Default.cp     5    /*   Project name : Mario                                                    */
+      Default.cp     6    /*       Autor : Xavier Bruni                                                                            *
+                         +/
+      Default.cp     7    /*                                                               */
+      Default.cp     8    /*   Copyright (c) 2006 CASIO COMPUTER CO., LTD.                 */
+      Default.cp     9    /*                                                               */
+      Default.cp    10    /*****************************************************************/
+      Default.cp    11    extern"C"{
+      Default.cp    12    #include "fxlib.h"
+      Default.cp    13    #include "memory.h"
+      Default.cp    14    #include "MonochromeLib.h"
+      Default.cp    15    }
+      Default.cp    16    
+      Default.cp    17    #include <iostream>
+      Default.cp    18    #include "Map.hpp"
+      Default.cp    19    
+      Default.cp    20    extern "C"{
+      Default.cp    21            int AddIn_main(int isAppli, unsigned short OptionNum)
+P   00000000              _AddIn_main:                     ; function: AddIn_main
+                                                           ; frame size=4
+      Default.cp    22            {
+      Default.cp    23            unsigned int key;
+      Default.cp    24    
+      Default.cp    25            Bdisp_AllClr_DDVRAM();
+    00000000 D305                   MOV.L       L252,R3    ; _Bdisp_AllClr_DDVRAM
+    00000002 7FFC                   ADD         #-4,R15
+    00000004 430B                   JSR         @R3
+    00000006 0009                   NOP
+      Default.cp    26    
+      Default.cp    27            Map(1);
+    00000008 D204                   MOV.L       L252+4,R2  ; _Map__Fi
+    0000000A 420B                   JSR         @R2
+    0000000C E401                   MOV         #1,R4
+    0000000E DE04                   MOV.L       L252+8,R14 ; _GetKey
+      Default.cp    28    
+      Default.cp    29            while(1){
+    00000010              L249:                             
+      Default.cp    30                    GetKey(&key);
+    00000010 4E0B                   JSR         @R14
+    00000012 64F3                   MOV         R15,R4
+    00000014 AFFC                   BRA         L249
+    00000016 0009                   NOP
+    00000018              L252:                             
+    00000018 <00000000>             .DATA.L     _Bdisp_AllClr_DDVRAM
+    0000001C <00000000>             .DATA.L     _Map__Fi
+    00000020 <00000000>             .DATA.L     _GetKey
+      Default.cp    31            }
+      Default.cp    32    
+      Default.cp    33            return 1;
+      Default.cp    34            }
+
+
+
+
+SH SERIES C/C++ Compiler (Ver. 6.0C)                                                                 19-Dec-2014 15:43:12  PAGE    2
+
+
+SCT OFFSET   CODE       C LABEL     INSTRUCTION OPERAND    COMMENT
+
+      Default.cp    35    
+      Default.cp    36            #pragma section _BR_Size
+      Default.cp    37            unsigned long BR_Size;
+      Default.cp    38            #pragma section
+      Default.cp    39    
+      Default.cp    40    
+      Default.cp    41            #pragma section _TOP
+      Default.cp    42    
+      Default.cp    43            int InitializeSystem(int isAppli, unsigned short OptionNum)
+P_T 00000000              _InitializeSystem:               ; function: InitializeSystem
+                                                           ; frame size=0
+      Default.cp    44            {
+      Default.cp    45            return INIT_ADDIN_APPLICATION(isAppli, OptionNum);
+    00000000 D301                   MOV.L       L253+2,R3  ; _INIT_ADDIN_APPLICATION
+    00000002 432B                   JMP         @R3
+    00000004 0009                   NOP
+    00000006              L253:                             
+    00000006 0000                   .DATA.W     0
+    00000008 <00000000>             .DATA.L     _INIT_ADDIN_APPLICATION
+      Default.cp    46            }
+      Default.cp    47    
+      Default.cp    48            #pragma section
+      Default.cp    49    
+      Default.cp    50    }
+B_B 00000000              _BR_Size:                        ; static: BR_Size
+    00000000 00000004               .RES.L      1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SH SERIES C/C++ Compiler (Ver. 6.0C)                                                                 19-Dec-2014 15:43:12  PAGE    1
+
+
+******** STATISTICS INFORMATION ********
+
+
+********** ERROR INFORMATION ***********
+
+NUMBER OF ERRORS:           0
+NUMBER OF WARNINGS:         0
+
+
+
+
+******* SOURCE LINE INFORMATION ********
+
+COMPILED SOURCE LINE:       50
+
+
+
+******* SECTION SIZE INFORMATION *******
+
+PROGRAM  SECTION (P):                               00000024 Byte(s)
+PROGRAM  SECTION (P_BR_Size):                       00000000 Byte(s)
+PROGRAM  SECTION (P_TOP):                           0000000C Byte(s)
+CONSTANT SECTION (C):                               00000000 Byte(s)
+CONSTANT SECTION (C_BR_Size):                       00000000 Byte(s)
+CONSTANT SECTION (C_TOP):                           00000000 Byte(s)
+DATA     SECTION (D):                               00000000 Byte(s)
+DATA     SECTION (D_BR_Size):                       00000000 Byte(s)
+DATA     SECTION (D_TOP):                           00000000 Byte(s)
+BSS      SECTION (B):                               00000000 Byte(s)
+BSS      SECTION (B_BR_Size):                       00000004 Byte(s)
+BSS      SECTION (B_TOP):                           00000000 Byte(s)
+
+ TOTAL PROGRAM SIZE: 00000034 Byte(s)
+
+
+
+********** LABEL INFORMATION ***********
+
+NUMBER OF EXTERNAL REFERENCE SYMBOLS:            4
+NUMBER OF EXTERNAL DEFINITION SYMBOLS:           3
+NUMBER OF INTERNAL/EXTERNAL SYMBOLS:            10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*** COMMAND PARAMETER ***
+
+
+  -subcommand=C:\Users\Xavier\AppData\Local\Temp\hmk4968.tmp 
+
