@@ -1,4 +1,4 @@
-// TEST
+// Et bah voila !
 
 extern"C"{
 #include "MonochromeLib.h"
