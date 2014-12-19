@@ -9,6 +9,9 @@
 	extern const unsigned char tile_06[]; // tile grosse piece
 	extern const unsigned char tile_07[]; // tile piece normale
 	extern const unsigned char Mario_droite1[];
+	extern const unsigned char Mario_droite2[];
+	extern const unsigned char Mario_gauche1[];
+	extern const unsigned char Mario_gauche2[];
 
 	
 	
