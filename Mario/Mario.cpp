@@ -21,7 +21,6 @@ void JouerLevel(int Largeur,int Hauteur,char *Carte){
 
 	while(1){
 		for(i=(int)x-(Largeur*6)-4;i<=((int)x+Hauteur+12);i++){
-		
 		ML_bmp_or_cl(*(tile+Carte[i]-1),(a%18)*8+x2-8,(a/18)*8,8,8);
 			
 			a++;
