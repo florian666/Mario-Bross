@@ -21,25 +21,9 @@ void JouerLevel(int Largeur,int Hauteur,char *Carte){
 
 	while(1){
 		for(i=(int)x-(Largeur*6)-4;i<=((int)x+Hauteur+12);i++){
-
-			switch (Carte[i]){
-
-				case 1: ML_bmp_or_cl(tile_01,(a%18)*8+x2-8,(a/18)*8,8,8);
-						break;
-				case 2: ML_bmp_or_cl(tile_02,(a%18)*8+x2-8,(a/18)*8,8,8);
-						break;
-				case 3: ML_bmp_or_cl(tile_03,(a%18)*8+x2-8,(a/18)*8,8,8);
-						break;
-				case 4: ML_bmp_or_cl(tile_04,(a%18)*8+x2-8,(a/18)*8,8,8);
-						break;
-				case 5: ML_bmp_or_cl(tile_05,(a%18)*8+x2-8,(a/18)*8,8,8);
-						break;
-				case 6: ML_bmp_or_cl(tile_06,(a%18)*8+x2-8,(a/18)*8,8,8);
-						break;
-				case 7: ML_bmp_or_cl(tile_07,(a%18)*8+x2-8,(a/18)*8,8,8);
-						break;
-			}
-
+		
+		ML_bmp_or_cl(*(tile+Carte[i]-1),(a%18)*8+x2-8,(a/18)*8,8,8);
+			
 			a++;
 
 			if((a%18)==0) i+=Largeur-18;
