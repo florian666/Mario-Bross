@@ -40,9 +40,10 @@ void JouerLevel(int Largeur,int Hauteur,char *Carte){
 		if (RTC_getTicks() >= temps + 128){
 			temps = RTC_getTicks();
 			sprintf(buffer,"%d",FPS);
-			PrintMini(1,1,buffer,1);
 			FPS = 0;
 		}
+		
+		PrintMini(1,1,buffer,1);
 		
 		ML_display_vram();
 		ML_clear_vram();
